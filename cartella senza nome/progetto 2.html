@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Torino in mille modi di dire</title>
+    <link rel="stylesheet" href="progetto 2.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <a href="sito2.html" class="chevron-left"><i class="fas fa-chevron-left"></i></a>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="immagini/comunicazione 1.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="immagini/comunicazione 2.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="immagini/Comunicazione 3.png" style="width:100%">
+        </div>
+           
+        <div class="mySlides fade">
+            <img src="immagini/Comunicazione 4.png" style="width:100%">
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    
+
+
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
+    <script src="https://jsuites.net/v4/jsuites.webcomponents.js"></script>
+    <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+     
+    <jsuites-modal title="Torino in mille modi di dire" closed="true" width="600" height="480" >
+        <p style="font-family: Poppins, sans-serif; font-size: 16px;">
+            La città di Torino sta affrontando una nuova fase di rinnovamento della sua comunicazione, e questo progetto si concentra sul cuore stesso del 
+            cambiamento: il linguaggio 
+            utilizzato. Il concept si basa sull’uso di modi di dire ed espressioni
+            idiomatiche, che permettono di 
+            comunicare concetti in modo diretto e comprensibile. Questi modi di dire sono familiari a tutti e possono 
+            essere adattati a qualsiasi tipo di informazione. L’obiettivo principale è creare una comunicazione fresca e giovanile, che coinvolga il pubblico.
+            Questo approccio verrà arricchito da illustrazioni correlate ai modi di dire e agli argomenti trattati, che 
+            arricchiranno la comunicazione.
+            Tra i principali elementi del nostro 
+            progetto, rientra la creazione di 
+            locandine accattivanti, brochures 
+            informative e banner che 
+            utilizzeranno i modi di dire come 
+            elemento chiave per trasmettere messaggi chiari e memorabili. 
+            Inoltre, è stata progettata una 
+            campagna di comunicazione che includerà gadget come spille, 
+            segnalibri, sticker e totebag, con l’obiettivo di coinvolgere il pubblico e diffondere il nuovo stile di 
+            comunicazione in modo tangibile.
+    </p>
+    </jsuites-modal>
+     
+     
+    <script>
+    document.querySelector('jsuites-modal').addEventListener('onopen', function() {
+        console.log('Modal is open');
+    });
+    document.querySelector('jsuites-modal').addEventListener('onclose', function() {
+        console.log('Modal is closed');
+    });
+    </script>
+    
+    
+        <div class="content-container">
+            <div class="content">
+                <h1>Torino in mille modi di dire</h1>
+                <input type='button' value='Scopri di più sul progetto'
+                onclick="document.querySelector('jsuites-modal').modal.open()" class='modal-button'>
+            </div>
+        </div>
+        <script src="progetti.js"></script>
+    </body>
+    </html>
+    

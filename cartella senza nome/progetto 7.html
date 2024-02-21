@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>per Loro</title>
+    <link rel="stylesheet" href="progetto 7.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+ 
+    <a href="sito2.html" class="chevron-left"><i class="fas fa-chevron-left"></i></a>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="immagini/papà 1.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="immagini/papà 2.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="immagini/papà 3.png" style="width:100%">
+        </div>
+           
+
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    
+
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
+<script src="https://jsuites.net/v4/jsuites.webcomponents.js"></script>
+<link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+ 
+<jsuites-modal title="perLoro" closed="true" width="600" height="480" >
+    <p style="font-family: Poppins, sans-serif; font-size: 16px;">
+        L'azienda "per Loro", specializzata nell'assistenza domiciliare agli anziani, mi ha incaricata di ideare e sviluppare il suo logo e slogan aziendale. Il design del logo si è concentrato sull'incorporare l'immagine della Protea, un fiore sudafricano particolarmente significativo per il fondatore dell'azienda, con l'obiettivo di trasmettere un'immagine elegante e professionale.
+
+        Nella palette colori, ho scelto di utilizzare tonalità di bianco e blu. Il blu, in particolare, è stato selezionato per le sue connotazioni di calma, serenità, pace e lealtà, attributi che rispecchiano perfettamente i valori e l'etica lavorativa dell'azienda.
+        
+        Il logo è stato realizzato in diverse varianti cromatiche – bianco su sfondo blu, blu su sfondo bianco e nero su sfondo bianco – per garantire la massima versatilità e adattabilità su diversi supporti e materiali.
+        
+        Oltre alla creazione del logo, ho curato la realizzazione del brand book dell'azienda, uno strumento fondamentale per assicurare coerenza e identità visiva in tutte le sue applicazioni. Attualmente, sto anche lavorando alla progettazione del sito web dell'azienda, che rappresenterà un ulteriore tassello importante nella strategia di branding e comunicazione di "per Loro".
+</p>
+</jsuites-modal>
+ 
+ 
+<script>
+document.querySelector('jsuites-modal').addEventListener('onopen', function() {
+    console.log('Modal is open');
+});
+document.querySelector('jsuites-modal').addEventListener('onclose', function() {
+    console.log('Modal is closed');
+});
+</script>
+
+
+    <div class="content-container">
+        <div class="content">
+            <h1>perLoro</h1>
+            <input type='button' value='Scopri di più sul progetto'
+            onclick="document.querySelector('jsuites-modal').modal.open()" class='modal-button'>
+        </div>
+    </div>
+    <script src="progetti.js"></script>
+</body>
+</html>

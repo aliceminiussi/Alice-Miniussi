@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Applicazione Zona Nuova</title>
+    <link rel="stylesheet" href="progetto 9.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+ 
+    <a href="sito2.html" class="chevron-left"><i class="fas fa-chevron-left"></i></a>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="immagini/ux.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="immagini/ux 1.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="immagini/ux 2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="immagini/ux 3.png" style="width:100%">
+        </div>
+           
+        <div class="mySlides fade">
+            <img src="immagini/ux 4.png" style="width:100%">
+        </div>
+           
+        <div class="mySlides fade">
+            <img src="immagini/ux 5.png" style="width:100%">
+        </div>
+           
+        <div class="mySlides fade">
+            <img src="immagini/ux 6.png" style="width:100%">
+        </div>
+           
+        <div class="mySlides fade">
+            <img src="immagini/ux 7.png" style="width:100%">
+        </div>
+           
+        <div class="mySlides fade">
+            <img src="immagini/ux 8.png" style="width:100%">
+        </div>
+           
+        <div class="mySlides fade">
+            <img src="immagini/ux 9.png" style="width:100%">
+        </div>
+           
+        <div class="mySlides fade">
+            <img src="immagini/ux 10.png" style="width:100%">
+        </div>
+           
+        <div class="mySlides fade">
+            <img src="immagini/ux 11.png" style="width:100%">
+        </div>
+           
+        <div class="mySlides fade">
+            <img src="immagini/ux 12.png" style="width:100%">
+        </div>
+           
+        <div class="mySlides fade">
+            <img src="immagini/ux 13.png" style="width:100%">
+        </div>
+           
+        <div class="mySlides fade">
+            <img src="immagini/ux 14.png" style="width:100%">
+        </div>
+         
+        <div class="mySlides fade">
+            <img src="immagini/ux 15.png" style="width:100%">
+        </div>
+        
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+        <span class="dot" onclick="currentSlide(12)"></span>
+        <span class="dot" onclick="currentSlide(13)"></span>
+        <span class="dot" onclick="currentSlide(14)"></span>
+        <span class="dot" onclick="currentSlide(15)"></span>
+        <span class="dot" onclick="currentSlide(16)"></span>
+    </div>
+    
+
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
+<script src="https://jsuites.net/v4/jsuites.webcomponents.js"></script>
+<link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+ 
+<jsuites-modal title="Applicazione Zona Nuova" closed="true" width="600" height="480" >
+    <p style="font-family: Poppins, sans-serif; font-size: 16px;">
+        
+        Zona Nuova è un’applicazione che ti permette di scoprire nuove realtà presso i circoli di Arci Zona Sud, dove valorizzare le tue passioni e le tue attività preferite in modo sicuro e vicino alla tua comfort zone 
+        Dopo un’attenta analisi si è deciso di creare un’applicazione che aiuta chi soffre di solitudine ad incontrarsi, dando valore alle loro passioni, con la possibilità di organizzarsi con altre persone per partecipare o 
+        creare delle attività nei circoli; il fine è di migliorare lo stato di vulnerabilità dei giovani, aiutandoli ad uscire dalla loro comfort zone con degli strumenti e delle motivazioni in più
+</p>
+</jsuites-modal>
+ 
+ 
+<script>
+document.querySelector('jsuites-modal').addEventListener('onopen', function() {
+    console.log('Modal is open');
+});
+document.querySelector('jsuites-modal').addEventListener('onclose', function() {
+    console.log('Modal is closed');
+});
+</script>
+
+
+    <div class="content-container">
+        <div class="content">
+            <h1>Applicazione Zona Nuova</h1>
+            <input type='button' value='Scopri di più sul progetto'
+            onclick="document.querySelector('jsuites-modal').modal.open()" class='modal-button'>
+        </div>
+    </div>
+    <script src="progetti.js"></script>
+</body>
+</html>

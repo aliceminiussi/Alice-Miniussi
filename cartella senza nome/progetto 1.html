@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fanzine Alice Miniussi</title>
+    <link rel="stylesheet" href="progetto 1.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <a href="sito2.html" class="chevron-left"><i class="fas fa-chevron-left"></i></a>
+
+<div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="immagini/fanzine 1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="immagini/fanzine 2.png" style="width:100%">
+    </div>
+    
+    <div class="mySlides fade">
+        <img src="immagini/fanzine 3.png" style="width:100%">
+    </div>
+       
+    <div class="mySlides fade">
+        <img src="immagini/fanzine 4.png" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<script src="https://jsuites.net/v4/jsuites.js"></script>
+<script src="https://jsuites.net/v4/jsuites.webcomponents.js"></script>
+<link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+ 
+<jsuites-modal title="Fanzine" closed="true" width="600" height="480" >
+    <p style="font-family: Poppins, sans-serif; font-size: 16px;">
+    Fanzine che ruota attorno al tema dell’animazione virtuale. 
+    Composta da 52 pagine, tra cui la copertina, 
+    rilegata manualmente.
+    All’interno di questa pubblicazione, verranno 
+    citate nove straordinarie realtà artistiche, tra studi e artisti, che si sono distinti nel campo 
+    dell’animazione virtuale. Vengono presentati tre studi italiani, tre studi stranieri di fama 
+    internazionale e tre eccezionali artisti da ogni angolo del mondo. Ognuno di loro rappresenta un’eccezione nel mondo dell’animazione virtuale, e i loro contributi sono stati selezionati per la 
+    qualità e l’ispirazione che portano al nostro 
+    settore. Per ciascuno di questi studi e artisti, si può trovare una descrizione sia della loro storia che del progetto che li ha resi famosi come 
+    esempi di “best practice”.
+</p>
+</jsuites-modal>
+ 
+ 
+<script>
+document.querySelector('jsuites-modal').addEventListener('onopen', function() {
+    console.log('Modal is open');
+});
+document.querySelector('jsuites-modal').addEventListener('onclose', function() {
+    console.log('Modal is closed');
+});
+</script>
+
+
+    <div class="content-container">
+        <div class="content">
+            <h1>Fanzine</h1>
+            <input type='button' value='Scopri di più sul progetto'
+            onclick="document.querySelector('jsuites-modal').modal.open()" class='modal-button'>
+        </div>
+    </div>
+    <script src="progetti.js"></script>
+</body>
+</html>

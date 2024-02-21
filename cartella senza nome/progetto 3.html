@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donazione sangue</title>
+    <link rel="stylesheet" href="progetto 3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <a href="sito2.html" class="chevron-left"><i class="fas fa-chevron-left"></i></a>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="immagini/sangue .png" style="width:100%">
+        </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+
+    </div>
+    
+
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
+<script src="https://jsuites.net/v4/jsuites.webcomponents.js"></script>
+<link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+ 
+<jsuites-modal title="Donazione sangue" closed="true" width="600" height="480" >
+    <p style="font-family: Poppins, sans-serif; font-size: 16px;">
+        Creazione di una locandina informativa per invogliare e stimolare i cittadini del 
+        Piemonte a donare il sangue. Questo 
+        progetto si basa sull’idea dell’egoismo 
+        umano, ma in un senso positivo. 
+        La campagna è incentrata sul concetto 
+        innovativo che donare sangue è anche un modo per ottenere un beneficio personale, 
+        e questo concetto è enfatizzato nella 
+        locandina. L’approccio unico della 
+        campagna è il seguente: donando il sangue, non solo si aiuta gli altri in modo altruistico, ma si ha anche l’opportunità di conoscere 
+        gratuitamente la propria condizione 
+        fisiologica. Questa prospettiva mette in evidenza il legame tra il gesto nobile della donazione del sangue e il beneficio 
+        personale, sottolineando come un atto di generosità possa anche portare ad una 
+        maggiore consapevolezza sulla propria 
+        salute.
+</p>
+</jsuites-modal>
+ 
+ 
+<script>
+document.querySelector('jsuites-modal').addEventListener('onopen', function() {
+    console.log('Modal is open');
+});
+document.querySelector('jsuites-modal').addEventListener('onclose', function() {
+    console.log('Modal is closed');
+});
+</script>
+
+
+    <div class="content-container">
+        <div class="content">
+            <h1>Donazione sangue</h1>
+            <input type='button' value='Scopri di più sul progetto'
+            onclick="document.querySelector('jsuites-modal').modal.open()" class='modal-button'>
+        </div>
+    </div>
+    <script src="progetti.js"></script>
+</body>
+</html>

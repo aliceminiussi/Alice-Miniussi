@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zona Nuova</title>
+    <link rel="stylesheet" href="progetto 8.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+ 
+    <a href="sito2.html" class="chevron-left"><i class="fas fa-chevron-left"></i></a>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="immagini/Zona Nuova 1.png" style="width:100%">
+        </div>
+    
+        <div class="mySlides fade">
+            <img src="immagini/Zona Nuova 2.png" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="immagini/Zona Nuova 3.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="immagini/Zona Nuova 4.png" style="width:100%">
+        </div>
+           
+
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    
+
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
+<script src="https://jsuites.net/v4/jsuites.webcomponents.js"></script>
+<link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+ 
+<jsuites-modal title="Zona Nuova" closed="true" width="600" height="480" >
+    <p style="font-family: Poppins, sans-serif; font-size: 16px;">
+        I circoli Dravelli, Da Giau e 1° Maggio sono dei circoli ricchi di valori che hanno bisogno di un profondo ricambio generazionale, offrendo molteplici opportunità per coinvolgere anche le nuove generazioni. 
+Il progetto si basa principalmente su utenti con una precisa vulnerabilità, la solitudine della generazione Z.
+L’idea di base è che fuori dalla zona di comfort non c’è subito il panico, ma bensì una area di mezzo, la zona di ampliamento: una zona di noi stessi dove poter fare esperienze e attività ad un passo dal proprio comfort e senza panico 
+Zona Nuova è un viaggio verso l’esplorazione della propria zona di ampliamento, attraverso un percorso graduale e poco invasivo.
+Vuole creare uno spazio dove ognuno è in grado di sentirsi lontano dalla propria zona di panico, sfruttando lo spazio, le attività e i valori dei circoli Arci
+Sono stati creati come supporti dei poster, dei volantini, delle cartoline e degli stickers.
+Inoltre, per raggiungere un numero maggiore di utenti sono stati creati anche dei reel Instagram e dei contenuti per tik tok, che parlano dei circoli e delle loro attività con tono invitante ma poco invasivo
+</p>
+</jsuites-modal>
+ 
+ 
+<script>
+document.querySelector('jsuites-modal').addEventListener('onopen', function() {
+    console.log('Modal is open');
+});
+document.querySelector('jsuites-modal').addEventListener('onclose', function() {
+    console.log('Modal is closed');
+});
+</script>
+
+
+    <div class="content-container">
+        <div class="content">
+            <h1>Zona Nuova</h1>
+            <input type='button' value='Scopri di più sul progetto'
+            onclick="document.querySelector('jsuites-modal').modal.open()" class='modal-button'>
+        </div>
+    </div>
+    <script src="progetti.js"></script>
+</body>
+</html>

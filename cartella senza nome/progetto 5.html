@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smanicotto</title>
+    <link rel="stylesheet" href="progetto 5.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <a href="sito2.html" class="chevron-left"><i class="fas fa-chevron-left"></i></a>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="immagini/smanicotto.png" style="width:100%">
+        </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+
+    </div>
+
+
+
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
+<script src="https://jsuites.net/v4/jsuites.webcomponents.js"></script>
+<link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
+ 
+<jsuites-modal title="Smanicotto" closed="true" width="600" height="480" >
+    <p style="font-family: Poppins, sans-serif; font-size: 16px;">
+        Smanicotto è un manicotto da braccia per uso sportivo interdisciplinare. 
+        Il prodotto ha l’obiettivo di portare Banco Alimentare nel cuore degli eventi sportivi non competitivi. 
+        Grazie al tessuto in lycra, è in grado di proteggere dai raggi solari e mantenere stabile la temperatura delle braccia durante l’attività sportiva. 
+        Smanicotto è stato progettato per la corsa, ma può essere utilizzato in altri sport come il calcio o la pallavolo. 
+        Smanicotto sarà inserito all’interno di kit di iscrizione di eventi sportivi non competitivi. 
+        Lo scopo di questo prodotto è creare un forte impatto visivo, grazie alla grande quantità di persone che lo indossano nello stesso momento, distinguendolo e generando interesse nel contesto in cui viene inserito. 
+        Ciò è reso possibile grazie a una grafica, in cui l’identità di Banco Alimentare rimane parte integrante, capace di risaltare in una maratona o in un evento sportivo simile. Smanicotto ha l’obiettivo di 
+        promuovere il senso di comuni- tà che lega l’evento a Banco Alimentare.
+</p>
+</jsuites-modal>
+ 
+ 
+<script>
+document.querySelector('jsuites-modal').addEventListener('onopen', function() {
+    console.log('Modal is open');
+});
+document.querySelector('jsuites-modal').addEventListener('onclose', function() {
+    console.log('Modal is closed');
+});
+</script>
+
+
+    <div class="content-container">
+        <div class="content">
+            <h1>Smanicotto</h1>
+            <input type='button' value='Scopri di più sul progetto'
+            onclick="document.querySelector('jsuites-modal').modal.open()" class='modal-button'>
+        </div>
+    </div>
+    <script src="progetti.js"></script>
+</body>
+</html>
+
+
